@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  background-color: #ffffff;
+}
+
+.nav {
+  padding-top: 10px;
+  width: 100%;
+  display: flex;
+  background: #435368;
+  padding-bottom: 10px;
+}
+
+.nav p {
+  display: grid;
+  align-content: center;
+  height: 40px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin: 5px;
+  color: #ffffff;
+}
+
+.nav p:hover {
+  background: rgb(83, 97, 117);
+  height: 60px;
+  color: #E0E3E6;
+  cursor: pointer;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.6);
+  transform: translateY(-3%);
+}
+
+.L {
+  margin-left: 40px;
+  width: 50%;
+  border-radius: 23px;
+}
+
+.pequeña {
+  width: 40px;
+  height: 40px;
+  background-color: #626262;
+}
+
+.blanco {
+  background: #ffffff;
+  margin-right: 5px;
+}
+
+.modalDialog {
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 99999;
+  opacity: 0;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+
+.modalDialog:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modalDialog > div {
+  width: 400px;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
+  background: #fff;
+  background: -moz-linear-gradient(#fff, #999);
+  background: -webkit-linear-gradient(#fff, #999);
+  background: -o-linear-gradient(#fff, #999);
+  transition: opacity 400ms ease-in;
+}
+
+.close {
+  background: #606061;
+  color: #FFFFFF;
+  line-height: 25px;
+  position: absolute;
+  right: -12px;
+  text-align: center;
+  top: -10px;
+  width: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 12px;
+}
+
+.close:hover {
+  background: #00d9ff;
+}
+
+.cont {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.carta {
+  width: 29%;
+  margin: 20px;
+  border-radius: 9px;
+  background: #fff;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease;
+}
+
+.carta:hover {
+  box-shadow: 6px 6px 20px ;
+  transform: translateY(-3%);
+}
+
+.carta img {
+  width: 100%;
+  height: 210px;
+}
+
+.carta .contenido {
+  padding: 15px;
+  text-align: center;
+}
+
+.carta .contenido p {
+  line-height: 1.5;
+  color: #626262;
+}
+
+.carta .contenido h3 {
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.carta .contenido a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 8px;
+  color: #2fb4cc;
+  border: 1px solid #2fb4cc;
+  border-radius: 4px;
+  transition: all 400ms ease;
+}
+
+.carta .contenido a:hover {
+  background: #2fb4cc;
+  color: #fff;
+}
