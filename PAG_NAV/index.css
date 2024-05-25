@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
 }
 
 body {
@@ -28,8 +28,8 @@ body {
   display: grid;
   align-content: center;
   height: 40px;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 5px;
   color: #ffffff;
 }
@@ -45,19 +45,21 @@ body {
 
 .L {
   margin-left: 40px;
-  width: 50%;
+  margin-right: 40px;
+  width: 56%;
   border-radius: 23px;
 }
 
 .pequeña {
   width: 40px;
   height: 40px;
-  background-color: #626262;
+  
 }
 
 .blanco {
-  background: #ffffff;
+  background: transparent;
   margin-right: 5px;
+
 }
 
 .modalDialog {
@@ -107,9 +109,10 @@ body {
 }
 
 .close:hover {
-  background: #00d9ff;
+  background: #ff0000;
 }
 
+/*carta*/
 .cont {
   width: 100%;
   display: flex;
@@ -122,6 +125,10 @@ body {
 
 .carta {
   width: 29%;
+  display: inline-flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
   margin: 20px;
   border-radius: 9px;
   background: #fff;
@@ -135,7 +142,7 @@ body {
   transform: translateY(-3%);
 }
 
-.carta img {
+.mg {
   width: 100%;
   height: 210px;
 }
@@ -145,29 +152,19 @@ body {
   text-align: center;
 }
 
-.carta .contenido p {
-  line-height: 1.5;
-  color: #626262;
-}
 
-.carta .contenido h3 {
-  font-weight: 400;
-  margin-bottom: 15px;
-}
+.drop{
+  background: transparent;
+  width: 45px;
+  height: 45px;
+  margin-top: 7px;
+  margin-bottom: 10px;
+  margin-left: 7px;
+  background-color: #626262;
+  padding-bottom: 3px;
 
-.carta .contenido a {
-  text-decoration: none;
-  display: inline-block;
-  padding: 10px;
-  margin-top: 10px;
-  margin-bottom: 8px;
-  color: #2fb4cc;
-  border: 1px solid #2fb4cc;
-  border-radius: 4px;
-  transition: all 400ms ease;
+  
 }
-
-.carta .contenido a:hover {
-  background: #2fb4cc;
-  color: #fff;
+.transp{
+  background: transparent;
 }
